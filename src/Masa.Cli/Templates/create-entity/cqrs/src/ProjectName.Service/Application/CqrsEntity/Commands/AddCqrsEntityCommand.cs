@@ -1,7 +1,7 @@
 ﻿using Masa.BuildingBlocks.ReadWriteSplitting.Cqrs.Commands;
-using ProjectNameSpaceContracts.CqrsEntity;
+using ProjectNameContracts.CqrsEntity;
 
-namespace ProjectNameSpaceApplication.CqrsEntity.Commands;
+namespace ProjectNameService.Application.CqrsEntity.Commands;
 
 public record AddCqrsEntityCommand(AddCqrsEntityDto Dto) : Command
 {

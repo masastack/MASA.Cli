@@ -1,10 +1,16 @@
 ﻿using Masa.Contrib.Dispatcher.Events;
-using ProjectNameSpaceApplication.CqrsEntity.Commands;
+using ProjectNameService.Application.CqrsEntity.Commands;
 
-namespace ProjectNameSpaceApplication.CqrsEntity;
+namespace ProjectNameService.Application.CqrsEntity;
 
 public class CqrsEntityCommandHanlder
 {
+    // Use Business's DbContext
+    public CqrsEntityCommandHanlder()
+    {
+
+    }
+
     [EventHandler]
     public Task AddCqrsEntityAsync(AddCqrsEntityCommand command)
     {

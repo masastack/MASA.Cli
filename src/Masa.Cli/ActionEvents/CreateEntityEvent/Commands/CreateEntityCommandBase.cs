@@ -4,17 +4,6 @@ namespace Masa.Cli.ActionEvents.CreateEntityEvent.Commands;
 
 public abstract record CreateEntityCommandBase(CommandLineInputDto CommandLine) : Event
 {
-    public string GetCsprojFileName()
-    {
-        var files = Directory.GetFiles(Directory.GetCurrentDirectory(), "*.csproj");
-        if (files == null || files.Length < 1)
-        {
-            return null;
-        }
-        var file = files.First();
-        return Path.GetFileNameWithoutExtension(file);
-    }
-
     /// <summary>
     /// 
     /// </summary>

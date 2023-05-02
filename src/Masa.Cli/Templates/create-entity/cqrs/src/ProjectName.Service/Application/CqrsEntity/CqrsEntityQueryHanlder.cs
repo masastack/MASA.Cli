@@ -1,10 +1,17 @@
 ﻿using Masa.Contrib.Dispatcher.Events;
-using ProjectNameSpaceApplication.CqrsEntity.Queries;
+using ProjectNameService.Application.CqrsEntity.Queries;
 
-namespace ProjectNameSpaceApplication.CqrsEntity;
+namespace ProjectNameService.Application.CqrsEntity;
 
 public class CqrsEntityQueryHanlder
 {
+
+    // Use Query's DbContext
+    public CqrsEntityQueryHanlder()
+    {
+
+    }
+
     [EventHandler]
     public Task GetListAsync(GetListCqrsEntityQuery query)
     {

@@ -1,7 +1,7 @@
 ﻿using Masa.BuildingBlocks.ReadWriteSplitting.Cqrs.Queries;
-using ProjectNameSpaceContracts.CqrsEntity;
+using ProjectNameContracts.CqrsEntity;
 
-namespace ProjectNameSpaceApplication.CqrsEntity.Queries;
+namespace ProjectNameService.Application.CqrsEntity.Queries;
 
 public record GetCqrsEntityQuery(Guid Id) : Query<GetCqrsEntityDto>
 {

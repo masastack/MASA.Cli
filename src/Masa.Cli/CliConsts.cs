@@ -14,6 +14,6 @@ public static class CliConsts
 
         public static string ProjectNameCommandKey = "project-name";
 
-        public static string ProjectNameSpaceKey = "ProjectNameSpace";
+        public static string ProjectNameKey = "ProjectName";
     }
 }

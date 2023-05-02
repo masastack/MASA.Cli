@@ -9,17 +9,17 @@ public class CommandHandler
     public async Task CreateCqrsEntity(CqrsEntityCommand @event)
     {
         var commandLine = @event.CommandLine;
-        var projectNameSpace = @event.GetCsprojFileName();
+        var ProjectName = FileHelper.GetFileName(Directory.GetCurrentDirectory());
 
         if (commandLine.Args.TryGetValue(CliConsts.CreateEntity.ProjectNameCommandKey, out string projectName) && !projectName.IsNullOrEmpty())
         {
-            projectNameSpace = projectName;
+            ProjectName = projectName;
         }
-        projectNameSpace = projectNameSpace.IsNullOrEmpty() ? "" : $"{projectNameSpace.Trim('.')}.";
+        ProjectName = ProjectName.IsNullOrEmpty() ? "" : $"{ProjectName.Trim('.')}.";
 
         List<Tuple<string, string>> replaceStrs = new List<Tuple<string, string>>
         {
-            new Tuple<string, string>(CliConsts.CreateEntity.ProjectNameSpaceKey, projectNameSpace),
+            new Tuple<string, string>(CliConsts.CreateEntity.ProjectNameKey, ProjectName),
             new Tuple<string, string>("CqrsEntity", commandLine.Target),
         };
 

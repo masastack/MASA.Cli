@@ -1,4 +1,4 @@
-﻿namespace ProjectNameSpaceContracts.CqrsEntity;
+﻿namespace ProjectNameContracts.CqrsEntity;
 
 public class GetCqrsEntityDto
 {

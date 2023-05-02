@@ -1,6 +1,6 @@
 ﻿using Masa.BuildingBlocks.Ddd.Domain.Entities;
 
-namespace ProjectNameSpaceDataAccess.CqrsEntity;
+namespace ProjectNameService.DataAccess.CqrsEntity;
 
 public class CqrsEntity : Entity<Guid>
 {

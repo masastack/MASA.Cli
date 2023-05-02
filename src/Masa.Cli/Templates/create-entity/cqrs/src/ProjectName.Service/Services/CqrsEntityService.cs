@@ -1,10 +1,10 @@
 ﻿using Masa.Utils.Models;
 using Microsoft.AspNetCore.Builder;
-using ProjectNameSpaceApplication.CqrsEntity.Commands;
-using ProjectNameSpaceApplication.CqrsEntity.Queries;
-using ProjectNameSpaceContracts.CqrsEntity;
+using ProjectNameService.Application.CqrsEntity.Commands;
+using ProjectNameService.Application.CqrsEntity.Queries;
+using ProjectNameContracts.CqrsEntity;
 
-namespace ProjectNameSpaceServices;
+namespace ProjectNameServices;
 
 public class CqrsEntityService : ServiceBase
 {

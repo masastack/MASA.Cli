@@ -16,59 +16,59 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Templates\create-entity\cqrs\Application\CqrsEntity\Commands\AddCqrsEntityCommand.cs" />
-    <Compile Remove="Templates\create-entity\cqrs\Application\CqrsEntity\Commands\DeleteCqrsEntityCommand.cs" />
-    <Compile Remove="Templates\create-entity\cqrs\Application\CqrsEntity\Commands\UpdateCqrsEntityCommand.cs" />
-    <Compile Remove="Templates\create-entity\cqrs\Application\CqrsEntity\CqrsEntityCommandHanlder.cs" />
-    <Compile Remove="Templates\create-entity\cqrs\Application\CqrsEntity\CqrsEntityQueryHanlder.cs" />
-    <Compile Remove="Templates\create-entity\cqrs\Application\CqrsEntity\Queries\GetCqrsEntityQuery.cs" />
-    <Compile Remove="Templates\create-entity\cqrs\Application\CqrsEntity\Queries\GetListCqrsEntityQuery.cs" />
-    <Compile Remove="Templates\create-entity\cqrs\DataAccess\CqrsEntity\CqrsEntity.cs" />
-    <Compile Remove="Templates\create-entity\cqrs\Dtos\CqrsEntity\AddCqrsEntityDto.cs" />
-    <Compile Remove="Templates\create-entity\cqrs\Dtos\CqrsEntity\GetCqrsEntityDto.cs" />
-    <Compile Remove="Templates\create-entity\cqrs\Dtos\CqrsEntity\GetListCqrsEntityDto.cs" />
-    <Compile Remove="Templates\create-entity\cqrs\Dtos\CqrsEntity\UpdateCqrsEntityDto.cs" />
-    <Compile Remove="Templates\create-entity\cqrs\Services\CqrsEntityService.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\src\ProjectName.Service\Application\CqrsEntity\Commands\AddCqrsEntityCommand.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\src\ProjectName.Service\Application\CqrsEntity\Commands\DeleteCqrsEntityCommand.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\src\ProjectName.Service\Application\CqrsEntity\Commands\UpdateCqrsEntityCommand.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\src\ProjectName.Service\Application\CqrsEntity\CqrsEntityCommandHanlder.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\src\ProjectName.Service\Application\CqrsEntity\CqrsEntityQueryHanlder.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\src\ProjectName.Service\Application\CqrsEntity\Queries\GetCqrsEntityQuery.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\src\ProjectName.Service\Application\CqrsEntity\Queries\GetListCqrsEntityQuery.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\src\ProjectName.Service\DataAccess\CqrsEntity\CqrsEntity.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\src\ProjectName.Contracts\Dtos\CqrsEntity\AddCqrsEntityDto.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\src\ProjectName.Contracts\Dtos\CqrsEntity\GetCqrsEntityDto.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\src\ProjectName.Contracts\Dtos\CqrsEntity\GetListCqrsEntityDto.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\src\ProjectName.Contracts\Dtos\CqrsEntity\UpdateCqrsEntityDto.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\src\ProjectName.Service\Services\CqrsEntityService.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Templates\create-entity\cqrs\Application\CqrsEntity\Commands\AddCqrsEntityCommand.cs">
+    <Content Include="Templates\create-entity\cqrs\src\ProjectName.Service\Application\CqrsEntity\Commands\AddCqrsEntityCommand.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\create-entity\cqrs\Application\CqrsEntity\Commands\DeleteCqrsEntityCommand.cs">
+    <Content Include="Templates\create-entity\cqrs\src\ProjectName.Service\Application\CqrsEntity\Commands\DeleteCqrsEntityCommand.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\create-entity\cqrs\Application\CqrsEntity\Commands\UpdateCqrsEntityCommand.cs">
+    <Content Include="Templates\create-entity\cqrs\src\ProjectName.Service\Application\CqrsEntity\Commands\UpdateCqrsEntityCommand.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\create-entity\cqrs\Application\CqrsEntity\CqrsEntityCommandHanlder.cs">
+    <Content Include="Templates\create-entity\cqrs\src\ProjectName.Service\Application\CqrsEntity\CqrsEntityCommandHanlder.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\create-entity\cqrs\Application\CqrsEntity\CqrsEntityQueryHanlder.cs">
+    <Content Include="Templates\create-entity\cqrs\src\ProjectName.Service\Application\CqrsEntity\CqrsEntityQueryHanlder.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\create-entity\cqrs\Application\CqrsEntity\Queries\GetCqrsEntityQuery.cs">
+    <Content Include="Templates\create-entity\cqrs\src\ProjectName.Service\Application\CqrsEntity\Queries\GetCqrsEntityQuery.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\create-entity\cqrs\Application\CqrsEntity\Queries\GetListCqrsEntityQuery.cs">
+    <Content Include="Templates\create-entity\cqrs\src\ProjectName.Service\Application\CqrsEntity\Queries\GetListCqrsEntityQuery.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\create-entity\cqrs\DataAccess\CqrsEntity\CqrsEntity.cs">
+    <Content Include="Templates\create-entity\cqrs\src\ProjectName.Service\DataAccess\CqrsEntity\CqrsEntity.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\create-entity\cqrs\Dtos\CqrsEntity\AddCqrsEntityDto.cs">
+    <Content Include="Templates\create-entity\cqrs\src\ProjectName.Contracts\Dtos\CqrsEntity\AddCqrsEntityDto.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\create-entity\cqrs\Dtos\CqrsEntity\GetCqrsEntityDto.cs">
+    <Content Include="Templates\create-entity\cqrs\src\ProjectName.Contracts\Dtos\CqrsEntity\GetCqrsEntityDto.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\create-entity\cqrs\Dtos\CqrsEntity\GetListCqrsEntityDto.cs">
+    <Content Include="Templates\create-entity\cqrs\src\ProjectName.Contracts\Dtos\CqrsEntity\GetListCqrsEntityDto.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\create-entity\cqrs\Dtos\CqrsEntity\UpdateCqrsEntityDto.cs">
+    <Content Include="Templates\create-entity\cqrs\src\ProjectName.Contracts\Dtos\CqrsEntity\UpdateCqrsEntityDto.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Templates\create-entity\cqrs\Services\CqrsEntityService.cs">
+    <Content Include="Templates\create-entity\cqrs\src\ProjectName.Service\Services\CqrsEntityService.cs">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
