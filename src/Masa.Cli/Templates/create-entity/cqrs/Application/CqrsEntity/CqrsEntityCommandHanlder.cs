@@ -1,7 +1,7 @@
 ﻿using Masa.Contrib.Dispatcher.Events;
-using ProjectNameSpace.Application.CqrsEntity.Commands;
+using ProjectNameSpaceApplication.CqrsEntity.Commands;
 
-namespace ProjectNameSpace.Application.CqrsEntity;
+namespace ProjectNameSpaceApplication.CqrsEntity;
 
 public class CqrsEntityCommandHanlder
 {

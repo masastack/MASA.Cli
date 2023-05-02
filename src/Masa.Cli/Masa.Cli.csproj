@@ -10,12 +10,76 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Masa.Contrib.Dispatcher.Events" Version="$(MASAFrameworkPackageVersion)" />
+    <Compile Remove="Templates\CreateEntity\**" />
+    <EmbeddedResource Remove="Templates\CreateEntity\**" />
+    <None Remove="Templates\CreateEntity\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Templates\CreateEntity\Ddd\" />
-    <Folder Include="Templates\New\" />
+    <Compile Remove="Templates\create-entity\cqrs\Application\CqrsEntity\Commands\AddCqrsEntityCommand.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\Application\CqrsEntity\Commands\DeleteCqrsEntityCommand.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\Application\CqrsEntity\Commands\UpdateCqrsEntityCommand.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\Application\CqrsEntity\CqrsEntityCommandHanlder.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\Application\CqrsEntity\CqrsEntityQueryHanlder.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\Application\CqrsEntity\Queries\GetCqrsEntityQuery.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\Application\CqrsEntity\Queries\GetListCqrsEntityQuery.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\DataAccess\CqrsEntity\CqrsEntity.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\Dtos\CqrsEntity\AddCqrsEntityDto.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\Dtos\CqrsEntity\GetCqrsEntityDto.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\Dtos\CqrsEntity\GetListCqrsEntityDto.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\Dtos\CqrsEntity\UpdateCqrsEntityDto.cs" />
+    <Compile Remove="Templates\create-entity\cqrs\Services\CqrsEntityService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Templates\create-entity\cqrs\Application\CqrsEntity\Commands\AddCqrsEntityCommand.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\create-entity\cqrs\Application\CqrsEntity\Commands\DeleteCqrsEntityCommand.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\create-entity\cqrs\Application\CqrsEntity\Commands\UpdateCqrsEntityCommand.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\create-entity\cqrs\Application\CqrsEntity\CqrsEntityCommandHanlder.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\create-entity\cqrs\Application\CqrsEntity\CqrsEntityQueryHanlder.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\create-entity\cqrs\Application\CqrsEntity\Queries\GetCqrsEntityQuery.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\create-entity\cqrs\Application\CqrsEntity\Queries\GetListCqrsEntityQuery.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\create-entity\cqrs\DataAccess\CqrsEntity\CqrsEntity.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\create-entity\cqrs\Dtos\CqrsEntity\AddCqrsEntityDto.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\create-entity\cqrs\Dtos\CqrsEntity\GetCqrsEntityDto.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\create-entity\cqrs\Dtos\CqrsEntity\GetListCqrsEntityDto.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\create-entity\cqrs\Dtos\CqrsEntity\UpdateCqrsEntityDto.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\create-entity\cqrs\Services\CqrsEntityService.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Masa.Contrib.Dispatcher.Events" Version="$(MASAFrameworkPackageVersion)" />
+    <PackageReference Include="Masa.Contrib.Service.MinimalAPIs" Version="1.0.0-rc.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Templates\new\" />
   </ItemGroup>
 
 </Project>

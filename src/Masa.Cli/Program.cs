@@ -1,4 +1,6 @@
-﻿namespace Masa.Cli;
+﻿using System.IO;
+
+namespace Masa.Cli;
 
 public class Program
 {
@@ -29,11 +31,12 @@ public class Program
             }
             if (actionType == null)
             {
-                Console.WriteLine("Command not found.");
+                Console.WriteLine($"Command '{action}' not found.");
             }
 
-            var actionCommand = (ActionCommandBase)Activator.CreateInstance(actionType, args);
+            var actionCommand = (ActionCommandBase)Activator.CreateInstance(actionType, new object[] { args });
             var eventBus = MasaApp.GetService<IEventBus>();
+
             await eventBus.PublishAsync(actionCommand);
 
         }
